@@ -1,0 +1,106 @@
+.card-container {
+  width: 99%;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10px;
+  overflow: hidden;
+}
+
+.cards-child {
+  height: 400px;
+  width: 400px;
+  padding: 30px;
+  border-radius: 8px;
+  border: 1px solid #fff;
+  box-shadow: 0px 4px 20px rgb(27 28 29 / 12%);
+  transition: 0.4s all;
+}
+
+.cards-sub {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 300;
+  margin-top: 10px;
+  letter-spacing: 1.2px;
+}
+
+.cards-p {
+  margin-top: 20px;
+  letter-spacing: 1.3px;
+  line-height: 1.9;
+}
+
+.cards-child:hover {
+  cursor: pointer;
+  border: 3px solid blue;
+}
+
+@media only screen and (max-width: 768px) {
+  /* .card-container{
+        margin-top: 800px;
+    } */
+
+  .card {
+    display: block;
+  }
+
+  .cards-child {
+    width: 100%;
+    height: 271px;
+    margin-top: 10px;
+  }
+
+  .cards-heading {
+    text-align: center;
+  }
+
+  .cards-sub {
+    text-align: center;
+  }
+
+  .cards-p {
+    text-align: center;
+  }
+
+  #card-child {
+    margin-top: -200px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .card {
+    display: block;
+  }
+
+  .cards-child {
+    width: 100%;
+    height: 292px;
+    margin-top: 10px;
+  }
+
+  .cards-heading {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .cards-sub {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .cards-p {
+    font-size: 10px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  cards-child {
+    width: 100%;
+    height: 305px;
+    margin-top: 10px;
+  }
+}

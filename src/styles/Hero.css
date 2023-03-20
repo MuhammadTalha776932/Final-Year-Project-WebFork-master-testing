@@ -1,0 +1,98 @@
+.hero{
+    background-color: #fff;
+    height:550px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image{
+    height: 300px;
+    width: 300px;
+    margin-top:60px;
+    margin-right: 100px;
+}
+
+.heading{
+    font-weight: 700;
+    font-size: 48px;
+    font-family: Nunito Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,S-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+    letter-spacing: 2px;
+    line-height: 1;
+    text-align: left;
+    margin-top:60px;
+}
+
+.mini-heading{
+    font-family: Nunito Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+    color:#344050;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+hr{
+    width: 138px;
+    margin-left:387px;
+    border: none;
+    outline: none;
+    height: 3px;
+    background-color: orange !important;
+    border-radius: 50% !important;
+}
+
+@media only screen and (max-width:768px){
+    .hero{
+        height: 300px;
+        width: 300px;
+        width: 100%;
+        overflow: hidden;
+    }
+    .heading{
+        font-size:30px;
+    }
+    hr{
+        display: none;
+    }
+    .image{
+        height:200px;
+        width: 200px;
+    }
+}
+
+ @media only screen and (max-width:425px){
+    .hero{
+        overflow: hidden;
+    }
+    .heading{
+        font-size:17px;
+    }
+    .mini-heading{
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width:375px){
+    .hero{
+        overflow: hidden;
+    }
+    .heading{
+        font-size:15px;
+        text-align: center;
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width:320px){
+    .hero{
+        overflow: hidden;
+    }
+    .heading{
+        font-size:14px;
+    }
+    .mini-heading{
+        font-size: 10px;
+    }
+
+}

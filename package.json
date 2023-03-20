@@ -1,0 +1,71 @@
+{
+  "name": "webfork",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:3001/",
+  "dependencies": {
+    "@auth0/auth0-react": "^1.10.2",
+    "@stripe/react-stripe-js": "^1.10.0",
+    "@stripe/stripe-js": "^1.36.0",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "axios": "^0.27.2",
+    "bootstrap": "^4.6.0",
+    "concurrently": "^7.4.0",
+    "grapesjs": "^0.19.5",
+    "grapesjs-aviary": "^0.1.2",
+    "grapesjs-blocks-basic": "^1.0.1",
+    "grapesjs-navbar": "^1.0.1",
+    "grapesjs-plugin-forms": "^2.0.5",
+    "grapesjs-preset-webpage": "^1.0.2",
+    "grapesjs-react": "^4.0.1",
+    "jquery": "^3.6.0",
+    "node": "^19.2.0",
+    "nodemon": "^2.0.20",
+    "popper.js": "^1.16.1",
+    "react": "^17.0.2",
+    "react-bootstrap": "^1.6.1",
+    "react-circular-progressbar": "^2.1.0",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.4.0",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "4.0.3",
+    "recharts": "^2.1.14",
+    "remixicon": "^2.5.0",
+    "styled-components": "^5.3.5",
+    "web-vitals": "^1.1.2",
+    "zustand": "^3.7.2"
+  },
+  "scripts": {
+    "start": "react-scripts --openssl-legacy-provider start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "dev": "concurrently \"react-scripts --openssl-legacy-provider start\" \"cd Server && nodemon index\""
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.18",
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.18",
+    "tailwindcss": "^3.2.2"
+  }
+}

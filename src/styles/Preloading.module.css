@@ -1,0 +1,110 @@
+:root {
+  --color-blue: #3a86ff;
+  --color-pink: #ff006e;
+  --color-orange: #fb5607;
+  --color-green: #80ffdb;
+  --color-white: #fff;
+}
+
+.loader {
+  width: 100px;
+  height: 100px;
+  margin: 250px auto 0;
+  border-radius: 50%;
+  position: relative;
+  animation: rotate 2.5s linear infinite;
+}
+.loader span {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: block;
+  transform: translateX(-50%) translateY(-50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.loader span:nth-child(1) {
+  animation: colorUp 2s ease infinite;
+  z-index: 1;
+}
+.loader span:nth-child(2) {
+  background: transparent;
+  border-left: 15px solid var(--color-blue);
+  border-right: 15px solid transparent;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+.loader span:nth-child(3) {
+  border-right: 15px solid var(--color-pink);
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid transparent;
+}
+.loader span:nth-child(4) {
+  border-right: 15px solid transparent;
+  border-top: 15px solid var(--color-orange);
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid transparent;
+}
+.loader span:nth-child(5) {
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid var(--color-green);
+}
+.loading_msg {
+  width: 100%;
+  margin: 0.5rem;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes colorUp {
+  0% {
+    background: var(--color-white);
+    width: 0px;
+    height: 0px;
+  }
+  15% {
+    background: var(--color-pink);
+    width: 50px;
+    height: 50px;
+  }
+  25% {
+    background: var(--color-white);
+    width: 0px;
+    height: 0px;
+  }
+  40% {
+    background: var(--color-orange);
+    width: 50px;
+    height: 50px;
+  }
+  50% {
+    background: var(--color-white);
+    width: 0px;
+    height: 0px;
+  }
+  65% {
+    background: var(--color-green);
+    width: 50px;
+    height: 50px;
+  }
+  75% {
+    background: var(--color-white);
+    width: 0px;
+    height: 0px;
+  }
+  90% {
+    background: var(--color-blue);
+    width: 50px;
+    height: 50px;
+  }
+}

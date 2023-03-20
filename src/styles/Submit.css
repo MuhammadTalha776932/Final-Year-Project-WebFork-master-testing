@@ -1,0 +1,87 @@
+ .container-form{
+    margin-top: 70px;
+}
+
+.submit-term h1{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#344050;
+}
+
+.submit-term h3{
+    text-align: center;
+    /* width: 50%; */
+    /* margin-left: 320px; */
+    color:#748194;
+    margin-top: 50px;
+}
+
+.form_container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-group{
+    margin-top: 50px;
+    height: 60px;
+    width: 660px;
+    color: #344050;
+    font-weight: 600;
+}
+
+.form-group label{
+    margin-left: 180px;
+}
+
+#exampleInputName{
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#exampleInputEmail1{
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+    font-weight: 600;
+    text-align: center;
+}
+
+.template-button{
+    margin-left: 300px;
+    font-family: 'Open Sans';
+    color: #ffffff;
+    text-decoration: none;
+    background: #ed3330;
+    padding: 15px;
+    width: 110px;
+    border-radius: 15px;
+    border: none;
+    transition: all 0.4s ease 0s;
+    text-align: center;
+    margin-top: 30px;
+    cursor: pointer;
+    font-size: 17px;
+    margin-top:40px;
+}
+
+.template-button:hover{
+    background-color:blue;
+}
+
+#form-group-id{
+    margin-right:160px;
+    margin-top:30px;
+}
+
+.form-submit{
+    margin-left: 295px;
+    margin-top: 10px;
+}
+
